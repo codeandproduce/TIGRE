@@ -1,0 +1,20 @@
+[
+  {
+    "idx": 0,
+    "name": "sequential_embedding_model",
+    "path": "0_LSTMSequentialEmbedding",
+    "type": "tigren.models.SequentialEmbedding"
+  },
+  {
+    "idx": 1,
+    "name": "relational_embedding_model",
+    "path": "1_FCRelationalEmbedding",
+    "type": "tigren.models.RelationalEmbedding"
+  },
+  {
+    "idx": 2,
+    "name": "prediction_model",
+    "path": "2_FCPrediction",
+    "type": "tigren.models.Prediction"
+  }
+]

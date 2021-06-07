@@ -1,0 +1,274 @@
+2021-06-05 18:48:40.427 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 0 train loss avg=0.03235769161923987
+2021-06-05 18:48:42.239 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:48:43.371 | INFO     | tigren.models.TIGREN:save:224 - Pickling large data found in save/1_FCRelationalEmbedding config: relational_encoding...
+2021-06-05 18:48:59.109 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 320 (Epoch 1) epoch train loss avg=0.03168104123324156
+2021-06-05 18:49:00.916 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:49:35.542 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 1 train loss avg=0.03137754820684185
+2021-06-05 18:49:37.349 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:50:09.012 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 640 (Epoch 2) epoch train loss avg=0.03061548453804694
+2021-06-05 18:50:10.821 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:50:30.307 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 2 train loss avg=0.030460055932769032
+2021-06-05 18:50:32.119 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:51:18.941 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 960 (Epoch 3) epoch train loss avg=0.029586243663767452
+2021-06-05 18:51:20.752 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:51:25.044 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 3 train loss avg=0.029554358057555605
+2021-06-05 18:51:26.851 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:52:16.491 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 4 train loss avg=0.028669553068390148
+2021-06-05 18:52:18.297 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:52:31.440 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 1280 (Epoch 5) epoch train loss avg=0.028191881719976664
+2021-06-05 18:52:33.247 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:53:10.981 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 5 train loss avg=0.027806159398961264
+2021-06-05 18:53:12.789 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:53:41.174 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 1600 (Epoch 6) epoch train loss avg=0.02715425884953755
+2021-06-05 18:53:42.981 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:54:05.586 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 6 train loss avg=0.02696064958867968
+2021-06-05 18:54:07.395 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:54:50.858 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 1920 (Epoch 7) epoch train loss avg=0.026177395275741252
+2021-06-05 18:54:52.667 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:55:00.106 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 7 train loss avg=0.026124299641271106
+2021-06-05 18:55:01.917 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:55:51.794 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 8 train loss avg=0.025296656918696692
+2021-06-05 18:55:53.603 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:56:03.417 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 2240 (Epoch 9) epoch train loss avg=0.024857282469218426
+2021-06-05 18:56:05.224 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:56:46.369 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 9 train loss avg=0.024478615635670112
+2021-06-05 18:56:48.178 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:57:13.187 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 2560 (Epoch 10) epoch train loss avg=0.023905397579073905
+2021-06-05 18:57:14.998 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:57:40.917 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 10 train loss avg=0.02366872832606562
+2021-06-05 18:57:42.725 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:58:22.893 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 2880 (Epoch 11) epoch train loss avg=0.02295416884352358
+2021-06-05 18:58:24.699 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:58:35.498 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 11 train loss avg=0.022862087736730693
+2021-06-05 18:58:37.317 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:59:27.133 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 12 train loss avg=0.022047934641481422
+2021-06-05 18:59:28.945 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 18:59:35.729 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 3200 (Epoch 13) epoch train loss avg=0.02159329896260585
+2021-06-05 18:59:37.532 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:00:21.780 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 13 train loss avg=0.021230550788220812
+2021-06-05 19:00:23.586 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:00:45.584 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 3520 (Epoch 14) epoch train loss avg=0.020715033205655906
+2021-06-05 19:00:47.388 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:01:16.439 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 14 train loss avg=0.020428454869839012
+2021-06-05 19:01:18.247 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:01:55.471 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 3840 (Epoch 15) epoch train loss avg=0.019776044227182866
+2021-06-05 19:01:57.282 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:02:11.142 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 15 train loss avg=0.0196341336323101
+2021-06-05 19:02:12.954 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:03:02.947 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 16 train loss avg=0.018833608855111678
+2021-06-05 19:03:04.754 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:03:08.211 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 4160 (Epoch 17) epoch train loss avg=0.018453164491802454
+2021-06-05 19:03:10.023 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:03:57.553 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 17 train loss avg=0.01804572540014738
+2021-06-05 19:03:59.359 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:04:18.052 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 4480 (Epoch 18) epoch train loss avg=0.017507260030304842
+2021-06-05 19:04:19.861 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:04:52.275 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 18 train loss avg=0.017263248677319678
+2021-06-05 19:04:54.081 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:05:27.973 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 4800 (Epoch 19) epoch train loss avg=0.016598358988852764
+2021-06-05 19:05:29.783 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:05:47.029 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 19 train loss avg=0.016478204649308176
+2021-06-05 19:05:48.831 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:06:37.937 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 5120 (Epoch 20) epoch train loss avg=0.015689169398198526
+2021-06-05 19:06:39.746 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:06:41.785 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 20 train loss avg=0.015680884751567585
+2021-06-05 19:06:43.593 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:07:33.459 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 21 train loss avg=0.014889662650215333
+2021-06-05 19:07:35.269 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:07:50.886 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 5440 (Epoch 22) epoch train loss avg=0.014396335852021972
+2021-06-05 19:07:52.690 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:08:28.166 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 22 train loss avg=0.014122610217051917
+2021-06-05 19:08:29.970 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:09:00.830 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 5760 (Epoch 23) epoch train loss avg=0.013528599183553376
+2021-06-05 19:09:02.642 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:09:22.965 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 23 train loss avg=0.01337744272314012
+2021-06-05 19:09:24.781 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:10:10.768 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 6080 (Epoch 24) epoch train loss avg=0.012670263934913757
+2021-06-05 19:10:12.579 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:10:17.724 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 24 train loss avg=0.012633593054488301
+2021-06-05 19:10:19.528 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:11:09.624 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 25 train loss avg=0.011872322985627612
+2021-06-05 19:11:11.431 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:11:23.771 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 6400 (Epoch 26) epoch train loss avg=0.01139836901399706
+2021-06-05 19:11:25.579 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:12:04.448 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 26 train loss avg=0.011059608554742376
+2021-06-05 19:12:06.261 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:12:33.780 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 6720 (Epoch 27) epoch train loss avg=0.010451143395832994
+2021-06-05 19:12:35.589 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:12:59.252 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 27 train loss avg=0.010253573332714741
+2021-06-05 19:13:01.062 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:13:43.806 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 7040 (Epoch 28) epoch train loss avg=0.009489742062914256
+2021-06-05 19:13:45.621 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:13:54.115 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 28 train loss avg=0.009430586890943471
+2021-06-05 19:13:55.923 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:14:45.833 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 29 train loss avg=0.008623240733152775
+2021-06-05 19:14:47.637 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:14:56.703 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 7360 (Epoch 30) epoch train loss avg=0.008180932281538844
+2021-06-05 19:14:58.510 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:15:40.570 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 30 train loss avg=0.007850593053277765
+2021-06-05 19:15:42.381 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:16:06.633 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 7680 (Epoch 31) epoch train loss avg=0.007279881011245066
+2021-06-05 19:16:08.449 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:16:35.221 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 31 train loss avg=0.007065381219259418
+2021-06-05 19:16:37.027 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:17:16.533 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 8000 (Epoch 32) epoch train loss avg=0.006360222275058429
+2021-06-05 19:17:18.353 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:17:29.956 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 32 train loss avg=0.0062745912382226494
+2021-06-05 19:17:31.765 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:18:21.680 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 33 train loss avg=0.005466570068135491
+2021-06-05 19:18:23.488 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:18:29.539 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 8320 (Epoch 34) epoch train loss avg=0.0049890949740074575
+2021-06-05 19:18:31.350 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:19:16.554 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 34 train loss avg=0.004663005068547047
+2021-06-05 19:19:18.368 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:19:39.603 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 8640 (Epoch 35) epoch train loss avg=0.004118270704057067
+2021-06-05 19:19:41.412 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:20:11.335 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 35 train loss avg=0.003890540798148904
+2021-06-05 19:20:13.142 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:20:49.599 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 8960 (Epoch 36) epoch train loss avg=0.0032723629609046675
+2021-06-05 19:20:51.405 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:21:06.148 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 36 train loss avg=0.0031859426125578705
+2021-06-05 19:21:07.962 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:21:58.067 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 37 train loss avg=0.0025644950858760077
+2021-06-05 19:21:59.877 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:22:02.582 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 9280 (Epoch 38) epoch train loss avg=0.002260060340631753
+2021-06-05 19:22:04.389 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:22:52.874 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 38 train loss avg=0.0019855249790497673
+2021-06-05 19:22:54.684 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:23:12.596 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 9600 (Epoch 39) epoch train loss avg=0.0016293323493473942
+2021-06-05 19:23:14.403 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:23:47.663 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 39 train loss avg=0.0014696401886481669
+2021-06-05 19:23:49.467 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:24:22.634 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 9920 (Epoch 40) epoch train loss avg=0.001097434444454848
+2021-06-05 19:24:24.440 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:24:42.512 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 40 train loss avg=0.0010272080766239402
+2021-06-05 19:24:44.322 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:25:32.763 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 10240 (Epoch 41) epoch train loss avg=0.0006770900691370085
+2021-06-05 19:25:34.575 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:25:37.414 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 41 train loss avg=0.0006725456337558991
+2021-06-05 19:25:39.222 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:26:29.226 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 42 train loss avg=0.000410995512583377
+2021-06-05 19:26:31.041 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:26:45.920 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 10560 (Epoch 43) epoch train loss avg=0.0002871790101755109
+2021-06-05 19:26:47.731 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:27:24.111 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 43 train loss avg=0.00023282522670342587
+2021-06-05 19:27:25.923 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:27:56.045 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 10880 (Epoch 44) epoch train loss avg=0.00013822315819804012
+2021-06-05 19:27:57.850 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:28:18.991 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 44 train loss avg=0.00012208925362174936
+2021-06-05 19:28:20.798 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:29:06.084 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 11200 (Epoch 45) epoch train loss avg=6.3380220382731e-05
+2021-06-05 19:29:07.890 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:29:13.783 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 45 train loss avg=6.170992865605275e-05
+2021-06-05 19:29:15.597 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:30:05.763 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 46 train loss avg=3.348227348814377e-05
+2021-06-05 19:30:07.568 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:30:19.115 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 11520 (Epoch 47) epoch train loss avg=2.4050086862049422e-05
+2021-06-05 19:30:20.929 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:31:00.668 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 47 train loss avg=2.272692502807987e-05
+2021-06-05 19:31:02.478 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:31:29.265 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 11840 (Epoch 48) epoch train loss avg=1.8891702694645574e-05
+2021-06-05 19:31:31.071 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:31:55.551 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 48 train loss avg=1.9422153858702913e-05
+2021-06-05 19:31:57.360 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:32:39.398 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 12160 (Epoch 49) epoch train loss avg=1.7862295180748333e-05
+2021-06-05 19:32:41.211 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:32:50.518 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 49 train loss avg=1.8583451865048178e-05
+2021-06-05 19:32:52.330 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:33:42.471 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 50 train loss avg=1.8425769648736782e-05
+2021-06-05 19:33:44.286 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:33:52.780 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 12480 (Epoch 51) epoch train loss avg=1.659524352564606e-05
+2021-06-05 19:33:54.596 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:34:37.512 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 51 train loss avg=1.840232390409777e-05
+2021-06-05 19:35:01.776 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 12800 (Epoch 52) epoch train loss avg=1.874969502426081e-05
+2021-06-05 19:35:03.585 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:35:31.391 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 52 train loss avg=1.8400109534237254e-05
+2021-06-05 19:36:10.906 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 13120 (Epoch 53) epoch train loss avg=1.92102857870347e-05
+2021-06-05 19:36:23.970 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 53 train loss avg=1.8399503840585374e-05
+2021-06-05 19:37:14.760 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 54 train loss avg=1.8399820374561087e-05
+2021-06-05 19:37:20.584 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 13440 (Epoch 55) epoch train loss avg=1.9516340125846908e-05
+2021-06-05 19:38:07.368 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 55 train loss avg=1.8399779536758005e-05
+2021-06-05 19:38:28.459 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 13760 (Epoch 56) epoch train loss avg=2.0892231911299557e-05
+2021-06-05 19:38:59.981 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 56 train loss avg=1.8398894508954682e-05
+2021-06-05 19:39:36.358 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 14080 (Epoch 57) epoch train loss avg=1.8928320403490014e-05
+2021-06-05 19:39:52.638 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 57 train loss avg=1.8400150741056634e-05
+2021-06-05 19:40:43.473 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 58 train loss avg=1.8399462193928395e-05
+2021-06-05 19:40:46.098 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 14400 (Epoch 59) epoch train loss avg=1.7009454722938244e-05
+2021-06-05 19:41:36.138 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 59 train loss avg=1.83992379028436e-05
+2021-06-05 19:41:54.004 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 14720 (Epoch 60) epoch train loss avg=2.0024712080157768e-05
+2021-06-05 19:42:28.774 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 60 train loss avg=1.8398868006875465e-05
+2021-06-05 19:43:01.901 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 15040 (Epoch 61) epoch train loss avg=1.7456582327213255e-05
+2021-06-05 19:43:21.363 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 61 train loss avg=1.8398529235008803e-05
+2021-06-05 19:44:09.671 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 15360 (Epoch 62) epoch train loss avg=1.846493246610972e-05
+2021-06-05 19:44:13.897 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 62 train loss avg=1.839836845945564e-05
+2021-06-05 19:45:04.698 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 63 train loss avg=1.8399669223251042e-05
+2021-06-05 19:45:19.353 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 15680 (Epoch 64) epoch train loss avg=1.6770300348412093e-05
+2021-06-05 19:45:57.284 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 64 train loss avg=1.8399406811664956e-05
+2021-06-05 19:46:27.182 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 16000 (Epoch 65) epoch train loss avg=1.9027729357341222e-05
+2021-06-05 19:46:49.872 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 65 train loss avg=1.8397764528881602e-05
+2021-06-05 19:47:35.032 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 16320 (Epoch 66) epoch train loss avg=1.872162567485281e-05
+2021-06-05 19:47:42.452 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 66 train loss avg=1.8397645739182212e-05
+2021-06-05 19:48:33.169 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 67 train loss avg=1.83976389030622e-05
+2021-06-05 19:48:44.602 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 16640 (Epoch 68) epoch train loss avg=1.7405563198735763e-05
+2021-06-05 19:49:25.733 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 68 train loss avg=1.8397730571927776e-05
+2021-06-05 19:49:52.409 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 16960 (Epoch 69) epoch train loss avg=1.922237212907461e-05
+2021-06-05 19:50:18.267 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 69 train loss avg=1.8399589575370764e-05
+2021-06-05 19:51:00.198 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 17280 (Epoch 70) epoch train loss avg=1.839317999838386e-05
+2021-06-05 19:51:10.838 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 70 train loss avg=1.8398518194339512e-05
+2021-06-05 19:52:01.603 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 71 train loss avg=1.8397015656908062e-05
+2021-06-05 19:52:09.835 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 17600 (Epoch 72) epoch train loss avg=1.7226251543434046e-05
+2021-06-05 19:52:54.167 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 72 train loss avg=1.8397359744100317e-05
+2021-06-05 19:53:17.639 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 17920 (Epoch 73) epoch train loss avg=1.943930691662967e-05
+2021-06-05 19:53:46.698 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 73 train loss avg=1.8398455107463172e-05
+2021-06-05 19:54:25.403 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 18240 (Epoch 74) epoch train loss avg=1.7998501354431145e-05
+2021-06-05 19:54:39.259 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 74 train loss avg=1.8399826442829015e-05
+2021-06-05 19:55:30.029 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 75 train loss avg=1.8398724097976094e-05
+2021-06-05 19:55:35.048 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 18560 (Epoch 76) epoch train loss avg=3.0373210279321938e-05
+2021-06-05 19:55:36.854 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 19:56:23.680 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 76 train loss avg=1.8395977047505574e-05
+2021-06-05 19:56:43.933 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 18880 (Epoch 77) epoch train loss avg=1.798458438513436e-05
+2021-06-05 19:57:16.206 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 77 train loss avg=1.8396426990189776e-05
+2021-06-05 19:57:51.703 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 19200 (Epoch 78) epoch train loss avg=1.83157254425515e-05
+2021-06-05 19:58:08.751 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 78 train loss avg=1.8395914937217805e-05
+2021-06-05 19:58:59.475 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 19520 (Epoch 79) epoch train loss avg=1.8397419658927516e-05
+2021-06-05 19:59:01.283 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 79 train loss avg=1.8397419658927516e-05
+2021-06-05 19:59:52.018 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 80 train loss avg=1.839634948185851e-05
+2021-06-05 20:00:09.056 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 19840 (Epoch 81) epoch train loss avg=1.8357336342121828e-05
+2021-06-05 20:00:44.562 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 81 train loss avg=1.83954958614419e-05
+2021-06-05 20:01:16.817 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 20160 (Epoch 82) epoch train loss avg=1.7584774324955344e-05
+2021-06-05 20:01:37.078 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 82 train loss avg=1.8395357860530657e-05
+2021-06-05 20:02:24.621 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 20480 (Epoch 83) epoch train loss avg=1.8412163602701376e-05
+2021-06-05 20:02:29.639 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 83 train loss avg=1.839596536571707e-05
+2021-06-05 20:03:20.479 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 84 train loss avg=1.8395312512528435e-05
+2021-06-05 20:03:34.337 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 20800 (Epoch 85) epoch train loss avg=1.7244038887535376e-05
+2021-06-05 20:04:13.148 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 85 train loss avg=1.839445412844695e-05
+2021-06-05 20:04:42.284 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 21120 (Epoch 86) epoch train loss avg=1.883257612810078e-05
+2021-06-05 20:05:05.788 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 86 train loss avg=1.8394684461707615e-05
+2021-06-05 20:05:50.206 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 21440 (Epoch 87) epoch train loss avg=1.8535408427834347e-05
+2021-06-05 20:05:58.455 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 87 train loss avg=1.8394670780148996e-05
+2021-06-05 20:06:49.295 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 88 train loss avg=1.8394623678387523e-05
+2021-06-05 20:06:59.935 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 21760 (Epoch 89) epoch train loss avg=2.1405640857417232e-05
+2021-06-05 20:07:41.955 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 89 train loss avg=1.839463920316389e-05
+2021-06-05 20:08:07.883 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 22080 (Epoch 90) epoch train loss avg=1.945811432051414e-05
+2021-06-05 20:08:34.630 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 90 train loss avg=1.8394403487483764e-05
+2021-06-05 20:09:15.873 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 22400 (Epoch 91) epoch train loss avg=1.827141272305922e-05
+2021-06-05 20:09:27.340 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 91 train loss avg=1.839374994471923e-05
+2021-06-05 20:10:18.183 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 92 train loss avg=1.8393778191239107e-05
+2021-06-05 20:10:25.630 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 22720 (Epoch 93) epoch train loss avg=2.0380341278983644e-05
+2021-06-05 20:11:10.853 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 93 train loss avg=1.8394185875966613e-05
+2021-06-05 20:11:33.549 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 23040 (Epoch 94) epoch train loss avg=1.9276530373155347e-05
+2021-06-05 20:12:03.509 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 94 train loss avg=1.839699950964967e-05
+2021-06-05 20:12:41.449 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 23360 (Epoch 95) epoch train loss avg=1.880829034032811e-05
+2021-06-05 20:12:56.094 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 95 train loss avg=1.8393934814427115e-05
+2021-06-05 20:13:46.924 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 96 train loss avg=1.839305509822195e-05
+2021-06-05 20:13:51.150 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 23680 (Epoch 97) epoch train loss avg=2.122631576639833e-05
+2021-06-05 20:14:39.605 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 97 train loss avg=1.839332164912716e-05
+2021-06-05 20:14:59.089 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 24000 (Epoch 98) epoch train loss avg=1.7560653118793695e-05
+2021-06-05 20:15:32.249 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 98 train loss avg=1.839275951989875e-05
+2021-06-05 20:16:07.020 | INFO     | tigren.models.TIGREN:fit:143 - Evaluation Step: 24320 (Epoch 99) epoch train loss avg=1.761109034283081e-05
+2021-06-05 20:16:08.836 | INFO     | tigren.models.TIGREN:save:210 - Save model to save/
+2021-06-05 20:16:26.230 | INFO     | tigren.models.TIGREN:fit:152 - Epoch 99 train loss avg=1.839593890091222e-05
+number_of_dates 1259
+   0 : 1007
+   1007 : 1132
+   1132 : 1257

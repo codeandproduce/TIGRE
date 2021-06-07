@@ -1,0 +1,5 @@
+2021-06-07 09:50:49.602 | INFO     | tigre.TIGRE:fit:167 - Epoch 0 train loss avg=0.031091204554331106
+2021-06-07 09:50:51.410 | INFO     | tigre.TIGRE:save:225 - Save model to save/
+2021-06-07 09:50:52.514 | INFO     | tigre.TIGRE:save:239 - Pickling large data found in save/1_FCRelationalEmbedding config: relational_encoding...
+2021-06-07 11:26:43.661 | INFO     | tigre.TIGRE:fit:172 - Epoch 0 train loss avg=0.0005125409550630854
+2021-06-07 11:26:45.461 | INFO     | tigre.TIGRE:save:230 - Save model to save/
