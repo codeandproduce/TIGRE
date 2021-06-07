@@ -19,18 +19,18 @@ class StockWindowDataset(Dataset):
 
 
 class StockWindowDataReader(DataReader):
-    def __init__(self, stock_dataset: pd.DataFrame, window_size: int):
+    def __init__(self, stock_dataset: np.ndarray, target_index:int, window_size: int):
         """If Dataset (e.g. NASDAQDataset) class is for conveniently loading raw data, a reader handles all the
         processing of the data and allows access to a torch DataLoader as well as the original dataset.
         
         Args:
-            stock_dataset (pd.DataFrame): DataFrame object with type(index)=datetime.date and columns=[list of tickers].
+            stock_dataset (np.ndarray): numpy ndarray with shape [# of dates, # of stocks, # of features]
             
         """
         self.stock_dataset = stock_dataset
-        targets = self._build_ranking_targets(window_size=window_size, stock_dataset=self.stock_dataset) # 2. Build targets with ranking
+        self.target_index = target_index
+        targets = self._build_ranking_targets(window_size=window_size, stock_dataset=self.stock_dataset, target_index=self.target_index) # 2. Build targets with ranking
         inputs = self._build_window_inputs(window_size=window_size, stock_dataset=self.stock_dataset)
-    
         # prove 1 - 1 correspondence of price_window <=> pct change day after
         assert targets.shape[0] == inputs.shape[0] # number of rows
         assert targets.shape[1] == inputs.shape[2] # number of stocks. Recall that inputs.shape == [#rows, window_size, #stocks, #features]
@@ -64,7 +64,7 @@ class StockWindowDataReader(DataReader):
         )
         return dataloader
 
-    def _build_ranking_targets(self, window_size: int, stock_dataset: pd.DataFrame) -> np.ndarray:
+    def _build_ranking_targets(self, window_size: int, stock_dataset: np.ndarray, target_index: int) -> np.ndarray:
         """Targets for TIGREN model is the future performance ranking of stocks.
 
         Args:
@@ -75,57 +75,40 @@ class StockWindowDataReader(DataReader):
             pct_matrix (np.ndarray): Each row of pct_matrix is a list of pct_change (percent change) in price for each stock.
                 Each row corresponds to a trading window of N days before.
         """
-        pct_matrix = stock_dataset.pct_change()
-        pct_matrix = pct_matrix.iloc[window_size + 1:] # refer to docstring about window_size
-
-        pct_matrix = pct_matrix.applymap(lambda x: 0.01 if x == np.inf else x)
-
-        pct_matrix = pct_matrix.values
-
-        
-
-        # if self.normalize:
-        #     max_val = pct_matrix.max()
-        #     min_val = pct_matrix.min()
-        
-        #     pct_matrix = (pct_matrix - min_val) / (max_val - min_val)
+    
+        target_np = stock_dataset[:, :, target_index] # [# of days, # of stocks, target_index of feature]
+        pct_matrix = np.diff(target_np, axis=0) / target_np[:-1, :]
+        pct_matrix = pct_matrix[window_size:] # refer to docstring about window_size
+        temp_func = lambda x: 0.01 if x == np.inf else x
+        vfunc = np.vectorize(temp_func)
+        pct_matrix = vfunc(pct_matrix)
 
         return pct_matrix
         
-    def _build_window_inputs(self, window_size: int, stock_dataset: pd.DataFrame) -> np.ndarray:
+        
+    def _build_window_inputs(self, window_size: int, stock_dataset: np.ndarray) -> np.ndarray:
         """Input to TIGREN is "windows" of past stock data. This function takes the historical stock data
         and builds the sliding window input data.
 
         Args:
             window_size (int): Window size to look back in the model
-            stock_dataset (pd.DataFrame)
+            stock_dataset (np.ndarray)
         Returns:
             inputs (np.ndarray): An array of stock trading windows.
 
-        @TODO
-        Currently, the dataset only has one feature: price. But we've built the model architecture
-        so that it handles an array of features, since in the future we want it to be able to process 
-        more features than just historical price. Currently each element in the stock_dataset dataframe
-        is just the price value. Since the model expects a feature array, I've made an artificial feature
-        array of [price]. That's the reason why we have inputs = np.expand_dims(inputs, axis=-1). This line of
-        code should be deleted in the future once we have actual feature arrays.
         """
         n_windows = len(stock_dataset) - window_size - 1 # window count. -1 since we dont have next day pct_change target for the last window.
-        n_stocks = len(stock_dataset.columns) # stocks count
-        n_features = 1 # @TODO this needs to change once we can handle multiple features 
+        n_stocks = len(stock_dataset[0]) # stocks count
+        n_features = len(stock_dataset[0][0])
         
         inputs = [] # ws_idx = window start idx. Such that one_window = [ws_idx : ws_idx + window_size]
         for ws_idx in range(n_windows):
-            window_X_data = stock_dataset.iloc[ws_idx : ws_idx+window_size].values
-            assert window_X_data.shape == (window_size, n_stocks)
-
+            window_X_data = stock_dataset[ws_idx : ws_idx+window_size]
+            assert window_X_data.shape == (window_size, n_stocks, n_features)
             inputs.append(window_X_data)
 
         inputs = np.array(inputs)
-        assert inputs.shape == (n_windows, window_size, n_stocks)     
-
-        inputs = np.expand_dims(inputs, axis=-1) # artifically make feature array. price -> [price]. Refer to @TODO.
-        assert inputs.shape == (n_windows, window_size, n_stocks, n_features)   
+        assert inputs.shape == (n_windows, window_size, n_stocks, n_features)     
     
         return inputs
     

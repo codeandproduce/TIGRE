@@ -158,7 +158,6 @@ class TIGRE(nn.Module):
                     optimizer.step()
                     optimizer.zero_grad()
                 
-
                 if training_steps % evaluation_steps == 0:
                     logger.info(f"Evaluation Step: {training_steps} (Epoch {epoch}) epoch train loss avg={np.mean(epoch_train_loss)}")
                     self._eval_during_training(
