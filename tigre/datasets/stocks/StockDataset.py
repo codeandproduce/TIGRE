@@ -201,6 +201,8 @@ class StockDataset(ABC):
         n_rows = metadata["n_rows"]
         date_index = metadata["date_index"]
 
+        assert len(date_index) == len(self.data)
+
         for idx, ratio in enumerate(ratios):
             ratios[idx] = int(n_rows*ratio)
 
@@ -208,7 +210,7 @@ class StockDataset(ABC):
         prev_index = 0
         for idx, ratio in enumerate(ratios):
             data_split = self.data[prev_index : prev_index + ratio]
-            logger.info(f"datasplit {idx} start={date_index[0]} end={date_index[-1]} count={len(data_split)}")
+            logger.info(f"datasplit {idx} start={date_index[prev_index]} end={date_index[prev_index + ratio-1]} count={len(data_split)}")
             splits.append(data_split)
             prev_index = prev_index + ratio
 

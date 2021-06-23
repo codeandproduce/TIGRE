@@ -1,0 +1,1 @@
+{"output_shape": [481, 64], "seq_output_shape": [481, 64], "k_hops": 3, "hop_layers": 3, "large_data": ["relational_encoding"]}

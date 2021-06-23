@@ -18,7 +18,7 @@ NASDAQ_CSV = {
 }
 
 class NASDAQStockDataset(StockDataset):
-    def __init__(self, date_range: Tuple[str, str] = (None, None), features: List[str] = ["price", "feature1"], normalize: bool = True):
+    def __init__(self, date_range: Tuple[str, str], features: List[str], normalize: bool):
         """Loads the NASDAQ dataset.
         
         Args:

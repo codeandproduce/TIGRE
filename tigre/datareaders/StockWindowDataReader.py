@@ -5,10 +5,15 @@ from torch.utils.data import Dataset, DataLoader
 from .DataReader import DataReader
 
 class StockWindowDataset(Dataset):
-    def __init__(self, inputs: np.ndarray, targets: np.ndarray):
+    def __init__(self, inputs: np.ndarray, targets: np.ndarray, double: bool):
         super(StockWindowDataset, self)
-        self.inputs = inputs.astype(np.float32)
-        self.targets = targets.astype(np.float32)
+        if double:
+            self.inputs = inputs.astype(np.float64)
+            self.targets = targets.astype(np.float64)
+        else:
+            self.inputs = inputs.astype(np.float32)
+            self.targets = targets.astype(np.float32)
+    
     def __getitem__(self, idx):
         return {
             "inputs": self.inputs[idx],
@@ -19,7 +24,7 @@ class StockWindowDataset(Dataset):
 
 
 class StockWindowDataReader(DataReader):
-    def __init__(self, stock_dataset: np.ndarray, target_index:int, window_size: int):
+    def __init__(self, stock_dataset: np.ndarray, target_index:int, window_size: int, double: bool):
         """If Dataset (e.g. NASDAQDataset) class is for conveniently loading raw data, a reader handles all the
         processing of the data and allows access to a torch DataLoader as well as the original dataset.
         
@@ -36,9 +41,10 @@ class StockWindowDataReader(DataReader):
         assert targets.shape[1] == inputs.shape[2] # number of stocks. Recall that inputs.shape == [#rows, window_size, #stocks, #features]
 
         self.window_size = window_size
+        self.double = double
         self.inputs = inputs
         self.targets = targets
-        self.dataset = StockWindowDataset(inputs, targets)
+        self.dataset = StockWindowDataset(inputs, targets, double)
         
     def shape(self):
         return (self.inputs[0].shape, self.targets[0].shape)
@@ -77,6 +83,19 @@ class StockWindowDataReader(DataReader):
         """
     
         target_np = stock_dataset[:, :, target_index] # [# of days, # of stocks, target_index of feature]
+
+        zeros = np.where(target_np == 0)
+        if len(zeros[0]) > 0:
+            first_pos = zeros[0]
+            second_pos = zeros[1]
+            
+            for comb in zip(first_pos, second_pos):
+                if target_np[comb[0], comb[1] - 1] != 0:
+                    target_np[comb[0], comb[1]] = target_np[comb[0], comb[1] - 1]
+                else:
+                    raise Exception("oh my god")
+
+
         pct_matrix = np.diff(target_np, axis=0) / target_np[:-1, :]
         pct_matrix = pct_matrix[window_size:] # refer to docstring about window_size
         temp_func = lambda x: 0.01 if x == np.inf else x

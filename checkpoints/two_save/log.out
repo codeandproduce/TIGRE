@@ -1,0 +1,6 @@
+2021-06-23 15:54:38.676 | WARNING  | tigre.TIGRE:fit:139 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-23 15:56:34.694 | INFO     | tigre.TIGRE:fit:177 - Evaluation Step: 100 (Epoch 0) epoch train loss avg=0.25167188569903376
+2021-06-23 15:56:36.399 | INFO     | tigre.TIGRE:save:249 - Save model to checkpoints/two_save/
+2021-06-23 15:56:37.579 | INFO     | tigre.TIGRE:save:263 - Pickling large data found in checkpoints/two_save/1_FCRelationalEmbedding config: relational_encoding...
+2021-06-23 15:59:23.550 | INFO     | tigre.TIGRE:fit:178 - Evaluation Step: 100 (Epoch 0) epoch train loss avg=0.01886571051145438
+2021-06-23 15:59:25.255 | INFO     | tigre.TIGRE:save:250 - Save model to checkpoints/two_save/

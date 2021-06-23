@@ -32,6 +32,6 @@ class RankingMSELoss(nn.Module):
         true_pw_diff =  true_rr_repeated.transpose(1,2) - true_rr_repeated
 
         ranking_loss = torch.mean(nn.functional.relu(pred_pw_diff.mul(true_pw_diff)))
-        loss = mse_loss*alpha + ranking_loss*(1.0-alpha)
+        loss = mse_loss + ranking_loss*alpha
         
         return loss

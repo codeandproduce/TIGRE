@@ -44,12 +44,16 @@ class TIGRE_Wrapper(nn.Module):
         """
         super(TIGRE_Wrapper, self).__init__()
         self.device = device
+
+        input_shape = sequential_embedding_model.input_shape
+        self.norm = nn.BatchNorm2d(input_shape[0])
         self.sequential_embedding_model = sequential_embedding_model.to(device)
         self.relational_embedding_model = relational_embedding_model.to(device)
         self.prediction_model = prediction_model.to(device)
         
     def forward(self, input_data, show_full_outputs=None):
         input_data.to(self.device)
+        input_data = self.norm(input_data)
         seq_embeddings = self.sequential_embedding_model(input_data)
         relational_embeddings = self.relational_embedding_model(seq_embeddings)
        
@@ -67,7 +71,8 @@ class TIGRE(nn.Module):
         self, 
         model_path: str = None,
         modules: List[str] = None,
-        device: str = None
+        device: str = None,
+        target_transform: dict = None
     ):
         """Define the TIGRE (Temporally Inductive Graph Relational Embedding) model.
         Input to TIGRE is (#window size, # stocks, # features per stock). 
@@ -88,6 +93,8 @@ class TIGRE(nn.Module):
             logger.info("Use pytorch device: {}".format(self.device))
         else:
             self.device = device
+        
+        self.target_transform = target_transform
 
         if model_path is not None and modules is not None:
             raise Exception("You can't both request loading from a checkpoint and also initializing a new model.")
@@ -103,7 +110,11 @@ class TIGRE(nn.Module):
             return
             
     def forward(self, inputs, show_full_outputs=None):
-        return self.model(inputs, show_full_outputs)
+        model_outputs = self.model(inputs, show_full_outputs)
+        # if self.target_transform is not None and isinstance(target_transform, dict):
+        #     backward = self.target_transform["backward"]
+        #     return backward(model_outputs)
+        return model_outputs
 
     def fit(
         self, 
@@ -133,6 +144,8 @@ class TIGRE(nn.Module):
         # 1. Set up training
         train_loader = train_reader.get_dataloader(batch_size=batch_size)
         valid_loader = valid_reader.get_dataloader(batch_size=batch_size)
+
+        self.model.to(self.device)
         optimizer = optim.Adam(self.model.parameters(), lr=lr, weight_decay=weight_decay)
         self.best_loss = 999999
         if output_path and not os.path.isdir(output_path):
@@ -148,8 +161,19 @@ class TIGRE(nn.Module):
                 inputs = batch["inputs"].to(self.device)
                 targets = batch["targets"].to(self.device)
 
-                predicted_scores = self.model(inputs)
+                if self.target_transform is not None:
+                    transform = self.target_transform["forward"]
+                    targets = transform(targets)
+                
+                predicted_scores = self.model.forward(inputs)
                 loss = train_metric(predicted_scores, targets) / gradient_accumulation
+                
+                # print(targets[0][:10])
+                # print(predicted_scores[0][:10])
+                # print(loss)
+                # print()
+  
+              
                 loss.backward()
                 epoch_train_loss.append(loss.item() * gradient_accumulation) 
             
@@ -196,6 +220,13 @@ class TIGRE(nn.Module):
             for batch_idx, batch in enumerate(valid_loader):
                 inputs = batch["inputs"].to(self.device)
                 targets = batch["targets"].to(self.device)
+
+                if self.target_transform is not None:
+                    transform = self.target_transform["forward"]
+                    targets = transform(targets)
+                    targets.to(self.device)
+                   
+
                 predicted_scores = self.model(inputs)
 
                 for eval_metric in evaluation_metrics:

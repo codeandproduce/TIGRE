@@ -35,7 +35,7 @@ class SequentialEmbedding(nn.Module, ABC):
     def forward(self, input_data):
         pass
 
-
+    
     def output_shape(self) -> Tuple[int, int]:
         """Auto-compute the output shape of the SequentialEmbedding model. This will smooth out the 
         integration with the Relational Embedding.
@@ -84,13 +84,22 @@ class LSTMSequentialEmbedding(SequentialEmbedding):
             2. are we really only going to use one feature per stock???
         '''
         batch_size = input_data.size(0)
+        window_size = input_data.size(1)
+        n_stocks = input_data.size(2)
+        n_features = input_data.size(3)
+
+        assert self.window_size == window_size
+        assert self.N == n_stocks
+        assert self.n_features == n_features
+        
 
         input_data = input_data.permute(0, 2, 1, 3) # (16, 30, 736, 1) => (16, 736, 30, 1)
-        input_data = input_data.reshape([batch_size * self.N, self.window_size, self.n_features]) # => (16*736, 30, 1)
-        out, _ = self.lstm(input_data) # (16*736, 30, 1) => (16 * 736, 64)
-        out = out.reshape(batch_size, self.N, self.window_size, self.embedding_size) # => (16, 736, h_states=30, 64)
         
-        return out[:, :,-1,:] # (batch_size, N, U)
+        input_data = input_data.reshape([batch_size * self.N, self.window_size, self.n_features]) # => (16*736, 30, 1)
+        out, _ = self.lstm(input_data) # (16*736, 30, 1) => (16 * 736, 30, 64)
+        out = out[:, -1, :] # (batch_size * n_stocks, embeddings per stock)
+        out = out.reshape(batch_size, self.N, self.embedding_size) # => (batch_size, n_stocks, 64)
+        return out # (batch_size, N, U)
 
     def config(self):
         """Outputs a config dictionary that contains all the necessary information for

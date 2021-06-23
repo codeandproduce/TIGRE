@@ -139,13 +139,15 @@ def train():
         "hop_layers": 3,
         "lstm_layers": 3,
         "fn_layers": 3,
-        "lr": 1e-5,
+        "h_size": 256,
+        "double": False,
+        "lr": 1e-4,
         "weight_decay": 1e-8,
-        "alpha": 0.6,
+        "alpha": 0.8,
         "window_size": 30,
         "epochs": 100,
-        "batch_size": 4,
-        "gradient_accumulation": 16
+        "batch_size": 8,
+        "gradient_accumulation": 4
     }
     training_setup = {
         "ratios": [0.80, 0.10, 0.10],
@@ -154,7 +156,38 @@ def train():
         "wiki_date": "20180105",
         "device": "cuda:1",
         "output_path": "checkpoints/two_save/",
-        "evaluation_steps": 320
+        "evaluation_steps": 100
+    }
+    
+    def forward(target):
+        out = []
+        for j in target:
+            row = []
+            for x in j:
+                if x < 0:
+                    row.append(-torch.pow(-x, 0.2))
+                else:
+                    row.append(torch.pow(x, 0.2))
+            out.append(row)
+        scaled = torch.tensor(out).to(options.device)
+        return scaled + 0.5
+
+    def backward(target):
+        out = []
+        for j in target:
+            row = []
+            for x in j:
+                if x < 0:
+                    row.append(-torch.pow(-x, 1 / 0.2))
+                else:
+                    row.append(torch.pow(x, 1 / 0.2))
+            out.append(row)
+        scaled = torch.tensor(out).to(options.device)
+        return scaled - 0.5
+
+    target_transform={
+        "forward": forward,
+        "backward": backward
     }
     options = {**hyperparams, **training_setup}
     options = edict(options)
@@ -162,7 +195,8 @@ def train():
     # 1. Load datasets
     nasdaq = NASDAQStockDataset(
         date_range=options.date_range,
-        features=["price"] # price is a required feature.
+        features=["price"], # price is a required feature.
+        normalize=False
     )
     wikigraph = WikiGraphDataset(
         market=options.market, 
@@ -175,20 +209,26 @@ def train():
     relational_encoding, binary_encoding = wikigraph.get_encodings()
     relational_encoding = torch.Tensor(relational_encoding).to(options.device)
 
-    train_reader = StockWindowDataReader(stock_dataset=train, target_index=0, window_size=options.window_size)
-    valid_reader = StockWindowDataReader(stock_dataset=valid, target_index=0, window_size=options.window_size)
+    train_reader = StockWindowDataReader(stock_dataset=train, target_index=0, window_size=options.window_size, double=options.double)
+    valid_reader = StockWindowDataReader(stock_dataset=valid, target_index=0, window_size=options.window_size, double=options.double)
     
-
     # 3. Define models
     input_data_shape, target_shape = train_reader.shape() # input_data_shape == (window_size, # of stocks, # of features per stock)
 
     sequential_embedding_model = LSTMSequentialEmbedding(input_data_shape, options.seq_embed_size, options.lstm_layers)
     relational_embedding_model = FCRelationalEmbedding(sequential_embedding_model.output_shape(), relational_encoding, options.k_hops, options.hop_layers)
-    prediction_model = FCPrediction(sequential_embedding_model.output_shape(), relational_embedding_model.output_shape(), options.fn_layers)
+    prediction_model = FCPrediction(
+        sequential_embedding_model.output_shape(), 
+        relational_embedding_model.output_shape(), 
+        n_layers=options.fn_layers,
+        h_size=options.h_size,
+        double=options.double
+    )
     
     model = TIGRE(
         modules=(sequential_embedding_model, relational_embedding_model, prediction_model), 
-        device=options.device
+        device=options.device,
+        target_transform=target_transform
     )
 
     # Define loss functions
