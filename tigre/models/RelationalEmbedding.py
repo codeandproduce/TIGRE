@@ -14,8 +14,7 @@ class RelationalEmbedding(nn.Module, ABC):
         Args:
             seq_output_shape (Tuple[int, int, int]): The expected output shape of the sequential embedding model,
                 whose output is the input to the relational embedding model.
-            relational_encoding (np.ndarray): The graph definition. Expects shape: (N, N, K), 
-                where K = number of possible relationships a given pair of nodes can have.
+ㅇ                where K = number of possible relationships a given pair of nodes can have.
             k_hops (int): Number of hops to take in a graph for each node. If k_hops = 2, a computation graph
                 for a node will consider not only the neighbors to the node but also the neighbors of those neighbors.
         """
@@ -81,8 +80,7 @@ class FCRelationalEmbedding(RelationalEmbedding):
         self.k_hops = k_hops
         self.hop_layers = hop_layers
 
-        self.softmax_dim_1 = torch.nn.Softmax(dim=1)
-        self.activation_function = nn.LeakyReLU()
+        self.activation_function = nn.ReLU()
 
         # Dummy checks
         if self.hop_layers <= 0:
@@ -90,16 +88,25 @@ class FCRelationalEmbedding(RelationalEmbedding):
             raise Exception
 
         # Making FC layers: linear_k_hop_layer_i
-        U = seq_output_shape[-1] # U = sequential embedding size == relational embedding size
-        K = relational_encoding.size(-1) # K = number of possible relationships a pair of nodes can take in the graph
-        input_size = U + U + K # U + U + K
+        U = seq_output_shape[-1]            # U = sequential embedding size == relational embedding size
+        K = relational_encoding.size(-1)    # K = number of possible relationships a pair of nodes can take in the graph
+        input_size = U + U + K              # U + U + K
+
         for k in range(1,k_hops+1):
+            # One Fully-Connected NN for each hop k:
             for one_layer_i in range(1, hop_layers+1):
                 if one_layer_i != hop_layers:
                     one_layer = nn.Linear(input_size, input_size)
                 else:
                     one_layer = nn.Linear(input_size, 1)
-                setattr(self, f"linear_{k}_hop_layer_{one_layer_i}", one_layer)
+
+                norm_name = f"{k}_hop_norm_{one_layer_i}"
+                fc_layer_name = f"{k}_hop_fc_{one_layer_i}"
+                af_name = f"{k}_hop_af_{one_layer_i}"
+                
+                setattr(self, norm_name, nn.BatchNorm2d(seq_output_shape[0]))
+                setattr(self, fc_layer_name, one_layer)
+                setattr(self, af_name, nn.ReLU())
 
     def forward(self, seq_embed):
         """
@@ -108,8 +115,8 @@ class FCRelationalEmbedding(RelationalEmbedding):
         Returns:
             relational_embeddings (Tensor size=(N, U))
 
-        Felt reluctant about single-letter variable names but code became much more readable like this,
-        especially when these are widely-agreed upon names.
+        Felt reluctant about single-letter variable names but the code actually became 
+        much more readable like this, especially when these are widely-agreed upon names.
         N = # of stocks
         U = sequential embedding size
         K = # of relation that pair a given two nodes
@@ -133,9 +140,12 @@ class FCRelationalEmbedding(RelationalEmbedding):
         | [2,1] [2,2] [2,3] |
         | [3,1] [3,2] [3,3] |
 
-        hence, seq_combined[i][j] = [e_i, e_j]
+        hence, seq_combined[i][j] = [e_i | e_j], a concatenated embedding,
         where e_k = sequential embedding of kth stock.
         """
+
+        return seq_embed
+        
         batch_size, N, U = seq_embed.size()
         K = self.relational_encoding.size(-1)  # multi-hot binary graph encoding size.
         for k in range(1,self.k_hops+1):            
@@ -143,27 +153,56 @@ class FCRelationalEmbedding(RelationalEmbedding):
             encoding_repeated = self.relational_encoding.unsqueeze(dim=0).expand(batch_size, -1, -1, -1) # make it into a batch of size 1
             seq_repeated = seq_embed.repeat_interleave(repeats=N, dim=1)
             seq_repeated = seq_repeated.reshape((batch_size, N, N, U)) 
+
+            # seq_combined[i][j] = [e_i, e_j]
             seq_combined = torch.cat((
                 seq_repeated,                   
                 seq_repeated.transpose(1,2),
             ), dim=-1)
+
             # combined[i][j] = [e_i, e_j, a_ij]
             combined = torch.cat((
                 seq_combined,
                 encoding_repeated
             ), dim=-1)
             assert combined.size() == (batch_size, N, N, U+U+K)
+            
+            '''
+            Set unconnected nodes to zero. 
 
-            # set unconnected nodes to zero.
-            mask_dim_expand = self.relational_mask.unsqueeze(dim=-1)
+            relational_mask[i][j] == {
+                1 if node_i and node_j are connected
+                0 if node_i and node_j are disconnected.
+            }
+            
+            mask_dim_expand[i][j] == {
+                    [1] or [0] with same conditions as above.
+            }
+            '''
+            mask_dim_expand = self.relational_mask.unsqueeze(dim=-1) # mask_dim_expand[i][j] == [1] or [0]
+
+            '''
+            combined[i][j] == {
+                [e_i, e_j, a_ij] if node_i and node_j connected
+                [0, 0,..., 0]    if node_i and node_j are disconnected
+            }
+            '''
             combined = mask_dim_expand.mul(combined)
             
             # weights[i][j] = g(e_i, e_j, a_ij) values from Temporal paper.
             weights = combined
-            for one_layer_k in range(1, self.hop_layers+1):
-                linear_layer = getattr(self, f"linear_{k}_hop_layer_{one_layer_k}")
-                weights = linear_layer(weights)
-                weights = self.activation_function(weights)
+            for one_layer_i in range(1, self.hop_layers+1):
+                norm_name = f"{k}_hop_norm_{one_layer_i}"
+                fc_layer_name = f"{k}_hop_fc_{one_layer_i}"
+                af_name = f"{k}_hop_af_{one_layer_i}"
+
+                norm = getattr(self, norm_name)
+                layer = getattr(self, fc_layer_name)
+                af = getattr(self, af_name)
+
+                weights = norm(weights)
+                weights = layer(weights)
+                weights = af(weights)
             assert weights.size() == (batch_size, N, N, 1)
 
             # mask out disconnected nodes again

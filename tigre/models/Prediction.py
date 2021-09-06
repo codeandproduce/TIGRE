@@ -59,18 +59,20 @@ class FCPrediction(Prediction):
 
         self.input_size = input_size
         self.n_layers = n_layers
+        self.h_size = h_size
+        self.double = double
 
-        self.norm_1 = nn.BatchNorm1d(seq_input_shape[0])
+        self.norm_1 = nn.LayerNorm(input_size)
         self.fc_1 = nn.Linear(input_size, h_size, bias=True)
         self.af_1 = nn.ReLU()
         for n in range(2, self.n_layers):
             fc_layer_name = f"fc_{n}"
             af_name = f"af_{n}"
             norm= f"norm_{n}"
-            setattr(self,norm, nn.BatchNorm1d(seq_input_shape[0]))
+            setattr(self,norm, nn.LayerNorm(h_size))
             setattr(self, fc_layer_name, nn.Linear(h_size, h_size, bias=True))
             setattr(self, af_name, nn.ReLU())
-        self.norm_last = nn.BatchNorm1d(seq_input_shape[0])
+        self.norm_last = nn.LayerNorm(h_size)
         self.fc_last = nn.Linear(h_size, 1, bias=True)
         self.af_last = nn.ReLU()
 
@@ -98,7 +100,7 @@ class FCPrediction(Prediction):
             x = af(x)
         x = self.norm_last(x)
         x = self.fc_last(x)
-        x = self.af_last(x)
+        x = self.af_last(x)        
         x = torch.squeeze(x, dim=-1)
         return x
 

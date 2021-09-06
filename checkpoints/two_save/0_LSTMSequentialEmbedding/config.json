@@ -1,1 +1,1 @@
-{"output_shape": [481, 64], "input_shape": [30, 481, 1], "embedding_size": 64, "lstm_layers": 3}
+{"output_shape": [481, 16], "input_shape": [10, 481, 1], "embedding_size": 16, "lstm_layers": 2, "hidden_dim": 64}

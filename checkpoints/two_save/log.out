@@ -4,3 +4,309 @@
 2021-06-23 15:56:37.579 | INFO     | tigre.TIGRE:save:263 - Pickling large data found in checkpoints/two_save/1_FCRelationalEmbedding config: relational_encoding...
 2021-06-23 15:59:23.550 | INFO     | tigre.TIGRE:fit:178 - Evaluation Step: 100 (Epoch 0) epoch train loss avg=0.01886571051145438
 2021-06-23 15:59:25.255 | INFO     | tigre.TIGRE:save:250 - Save model to checkpoints/two_save/
+2021-06-24 19:50:52.772 | WARNING  | tigre.TIGRE:fit:143 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 19:52:10.772 | WARNING  | tigre.TIGRE:fit:143 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 19:53:00.762 | WARNING  | tigre.TIGRE:fit:143 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 19:57:03.779 | WARNING  | tigre.TIGRE:fit:143 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 19:57:40.980 | WARNING  | tigre.TIGRE:fit:143 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 19:59:00.758 | WARNING  | tigre.TIGRE:fit:143 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 19:59:06.457 | INFO     | tigre.TIGRE:fit:186 - Evaluation Step: 100 (Epoch 0) epoch train loss avg=0.4050512126088142
+2021-06-24 19:59:20.364 | WARNING  | tigre.TIGRE:fit:143 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:04:19.035 | WARNING  | tigre.TIGRE:fit:143 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:04:41.795 | WARNING  | tigre.TIGRE:fit:143 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:05:04.928 | WARNING  | tigre.TIGRE:fit:143 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:06:27.889 | WARNING  | tigre.TIGRE:fit:143 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:13:17.470 | WARNING  | tigre.TIGRE:fit:143 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:13:42.929 | WARNING  | tigre.TIGRE:fit:143 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:15:50.362 | WARNING  | tigre.TIGRE:fit:146 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:16:13.376 | WARNING  | tigre.TIGRE:fit:146 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:16:58.400 | WARNING  | tigre.TIGRE:fit:147 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:17:44.286 | WARNING  | tigre.TIGRE:fit:147 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:25:22.574 | WARNING  | tigre.TIGRE:fit:147 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:25:57.529 | WARNING  | tigre.TIGRE:fit:147 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:26:42.657 | WARNING  | tigre.TIGRE:fit:147 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:26:48.587 | INFO     | tigre.TIGRE:fit:186 - Evaluation Step: 100 (Epoch 0) epoch train loss avg=0.162609229311347
+2021-06-24 20:30:47.538 | WARNING  | tigre.TIGRE:fit:148 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:31:25.082 | WARNING  | tigre.TIGRE:fit:145 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:32:40.470 | WARNING  | tigre.TIGRE:fit:145 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:33:30.114 | WARNING  | tigre.TIGRE:fit:145 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:33:55.687 | WARNING  | tigre.TIGRE:fit:145 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:34:36.317 | INFO     | tigre.TIGRE:fit:185 - Evaluation Step: 100 (Epoch 0) epoch train loss avg=0.1593667361140251
+2021-06-24 20:34:41.221 | INFO     | tigre.TIGRE:save:259 - Save model to checkpoints/two_save/
+2021-06-24 20:36:29.326 | WARNING  | tigre.TIGRE:fit:145 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:36:42.562 | WARNING  | tigre.TIGRE:fit:145 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:36:57.153 | WARNING  | tigre.TIGRE:fit:145 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:37:35.940 | WARNING  | tigre.TIGRE:fit:145 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:38:56.377 | WARNING  | tigre.TIGRE:fit:146 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:39:44.908 | WARNING  | tigre.TIGRE:fit:146 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:40:01.197 | WARNING  | tigre.TIGRE:fit:146 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:41:17.141 | WARNING  | tigre.TIGRE:fit:146 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:41:52.423 | WARNING  | tigre.TIGRE:fit:146 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:42:06.068 | WARNING  | tigre.TIGRE:fit:146 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:43:57.025 | WARNING  | tigre.TIGRE:fit:146 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:44:08.062 | WARNING  | tigre.TIGRE:fit:146 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:48:37.915 | WARNING  | tigre.TIGRE:fit:146 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:49:08.137 | WARNING  | tigre.TIGRE:fit:146 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:49:19.221 | WARNING  | tigre.TIGRE:fit:146 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:49:58.604 | WARNING  | tigre.TIGRE:fit:146 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:50:34.388 | WARNING  | tigre.TIGRE:fit:146 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:51:04.651 | WARNING  | tigre.TIGRE:fit:146 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:51:43.653 | INFO     | tigre.TIGRE:fit:188 - Evaluation Step: 100 (Epoch 0) epoch train loss avg=0.2035388921201229
+2021-06-24 20:51:47.730 | INFO     | tigre.TIGRE:save:262 - Save model to checkpoints/two_save/
+2021-06-24 20:53:58.874 | WARNING  | tigre.TIGRE:fit:144 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:54:10.513 | WARNING  | tigre.TIGRE:fit:144 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:54:25.722 | WARNING  | tigre.TIGRE:fit:144 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:54:55.469 | WARNING  | tigre.TIGRE:fit:144 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:55:10.570 | WARNING  | tigre.TIGRE:fit:144 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:56:51.083 | WARNING  | tigre.TIGRE:fit:144 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:59:12.784 | WARNING  | tigre.TIGRE:fit:144 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 20:59:33.130 | WARNING  | tigre.TIGRE:fit:144 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-24 21:00:10.387 | INFO     | tigre.TIGRE:fit:186 - Evaluation Step: 100 (Epoch 0) epoch train loss avg=0.15716517567634583
+2021-06-24 21:00:15.469 | INFO     | tigre.TIGRE:save:260 - Save model to checkpoints/two_save/
+2021-06-26 16:40:00.807 | WARNING  | tigre.TIGRE:fit:144 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-26 16:40:38.296 | INFO     | tigre.TIGRE:fit:186 - Evaluation Step: 100 (Epoch 0) epoch train loss avg=0.3215648604929447
+2021-06-26 16:40:43.538 | INFO     | tigre.TIGRE:save:260 - Save model to checkpoints/two_save/
+2021-06-26 16:42:20.971 | WARNING  | tigre.TIGRE:fit:144 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-26 16:42:59.298 | INFO     | tigre.TIGRE:fit:186 - Evaluation Step: 100 (Epoch 0) epoch train loss avg=0.16798143669962884
+2021-06-26 16:43:04.506 | INFO     | tigre.TIGRE:save:260 - Save model to checkpoints/two_save/
+2021-06-26 16:44:40.691 | WARNING  | tigre.TIGRE:fit:144 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-26 16:45:18.278 | INFO     | tigre.TIGRE:fit:186 - Evaluation Step: 100 (Epoch 0) epoch train loss avg=0.424047529399395
+2021-06-26 16:46:00.096 | WARNING  | tigre.TIGRE:fit:145 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-26 16:46:20.839 | WARNING  | tigre.TIGRE:fit:145 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-26 16:47:00.887 | WARNING  | tigre.TIGRE:fit:145 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-26 16:47:39.244 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 100 (Epoch 0) epoch train loss avg=0.1720321300625801
+2021-06-26 16:47:44.640 | INFO     | tigre.TIGRE:save:261 - Save model to checkpoints/two_save/
+2021-06-26 16:50:30.739 | WARNING  | tigre.TIGRE:fit:145 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-26 16:51:08.829 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 100 (Epoch 0) epoch train loss avg=0.17614006787538528
+2021-06-26 16:51:14.207 | INFO     | tigre.TIGRE:save:261 - Save model to checkpoints/two_save/
+2021-06-26 16:54:00.056 | WARNING  | tigre.TIGRE:fit:145 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-26 16:54:38.901 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 100 (Epoch 0) epoch train loss avg=0.2427081598341465
+2021-06-26 16:54:44.205 | INFO     | tigre.TIGRE:save:261 - Save model to checkpoints/two_save/
+2021-06-26 16:55:47.102 | WARNING  | tigre.TIGRE:fit:145 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-26 16:56:05.269 | WARNING  | tigre.TIGRE:fit:145 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-26 16:56:38.437 | WARNING  | tigre.TIGRE:fit:145 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-26 16:57:16.868 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 100 (Epoch 0) epoch train loss avg=0.4212363636493683
+2021-06-26 16:57:22.144 | INFO     | tigre.TIGRE:save:261 - Save model to checkpoints/two_save/
+2021-06-26 16:57:32.739 | INFO     | tigre.TIGRE:fit:196 - Epoch 0 train loss avg=0.4218566126881107
+2021-06-26 16:57:38.018 | INFO     | tigre.TIGRE:save:261 - Save model to checkpoints/two_save/
+2021-06-26 16:58:04.891 | WARNING  | tigre.TIGRE:fit:145 - Evaluation steps is not a multiple of gradient_accumulation. This may lead to perserve interpretation of evaluations.
+2021-06-26 16:58:43.474 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 100 (Epoch 0) epoch train loss avg=0.3277074109017849
+2021-06-26 16:58:48.784 | INFO     | tigre.TIGRE:save:261 - Save model to checkpoints/two_save/
+2021-06-26 16:58:59.644 | INFO     | tigre.TIGRE:fit:196 - Epoch 0 train loss avg=0.30095592429561
+2021-06-26 16:59:04.926 | INFO     | tigre.TIGRE:save:261 - Save model to checkpoints/two_save/
+2021-06-26 16:59:35.796 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 200 (Epoch 1) epoch train loss avg=0.1698664991479171
+2021-06-26 16:59:41.086 | INFO     | tigre.TIGRE:save:261 - Save model to checkpoints/two_save/
+2021-06-26 17:00:00.872 | INFO     | tigre.TIGRE:fit:196 - Epoch 1 train loss avg=0.16648178968218066
+2021-06-26 17:00:06.520 | INFO     | tigre.TIGRE:save:261 - Save model to checkpoints/two_save/
+2021-06-26 17:00:27.806 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 300 (Epoch 2) epoch train loss avg=0.15973456863027352
+2021-06-26 17:01:00.740 | INFO     | tigre.TIGRE:fit:196 - Epoch 2 train loss avg=0.15992716291258413
+2021-06-26 17:01:16.682 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 400 (Epoch 3) epoch train loss avg=0.1582656396286828
+2021-06-26 17:01:22.024 | INFO     | tigre.TIGRE:save:261 - Save model to checkpoints/two_save/
+2021-06-26 17:02:00.027 | INFO     | tigre.TIGRE:fit:196 - Epoch 3 train loss avg=0.15805405138000364
+2021-06-26 17:02:05.312 | INFO     | tigre.TIGRE:save:261 - Save model to checkpoints/two_save/
+2021-06-26 17:02:08.169 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 500 (Epoch 4) epoch train loss avg=0.15702122449874878
+2021-06-26 17:02:13.420 | INFO     | tigre.TIGRE:save:261 - Save model to checkpoints/two_save/
+2021-06-26 17:02:53.359 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 600 (Epoch 4) epoch train loss avg=0.15657013855301416
+2021-06-26 17:02:58.560 | INFO     | tigre.TIGRE:save:261 - Save model to checkpoints/two_save/
+2021-06-26 17:03:07.573 | INFO     | tigre.TIGRE:fit:196 - Epoch 4 train loss avg=0.15691221325147536
+2021-06-26 17:03:43.557 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 700 (Epoch 5) epoch train loss avg=0.15712017733603717
+2021-06-26 17:04:05.565 | INFO     | tigre.TIGRE:fit:196 - Epoch 5 train loss avg=0.15666170466330745
+2021-06-26 17:04:31.889 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 800 (Epoch 6) epoch train loss avg=0.15818158271057264
+2021-06-26 17:05:03.184 | INFO     | tigre.TIGRE:fit:196 - Epoch 6 train loss avg=0.15733961244263955
+2021-06-26 17:05:20.323 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 900 (Epoch 7) epoch train loss avg=0.15443631960079074
+2021-06-27 11:24:58.073 | INFO     | tigre.TIGRE:fit:196 - Epoch 7 train loss avg=0.15729720566061237
+2021-06-27 11:25:06.482 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 1000 (Epoch 8) epoch train loss avg=0.16246779076755047
+2021-06-27 11:25:49.793 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 1100 (Epoch 8) epoch train loss avg=0.15794419511048882
+2021-06-27 11:26:01.522 | INFO     | tigre.TIGRE:fit:196 - Epoch 8 train loss avg=0.1575663409406139
+2021-06-27 11:26:38.846 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 1200 (Epoch 9) epoch train loss avg=0.1566458690379347
+2021-06-27 11:26:59.597 | INFO     | tigre.TIGRE:fit:196 - Epoch 9 train loss avg=0.15688517497431848
+2021-06-27 11:27:27.602 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 1300 (Epoch 10) epoch train loss avg=0.15825510223706563
+2021-06-27 11:27:57.071 | INFO     | tigre.TIGRE:fit:196 - Epoch 10 train loss avg=0.15688485604140065
+2021-06-27 11:28:15.923 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 1400 (Epoch 11) epoch train loss avg=0.15679431334137917
+2021-06-27 11:28:54.444 | INFO     | tigre.TIGRE:fit:196 - Epoch 11 train loss avg=0.1568492969437953
+2021-06-27 11:29:04.213 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 1500 (Epoch 12) epoch train loss avg=0.1594955250620842
+2021-06-27 11:29:47.647 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 1600 (Epoch 12) epoch train loss avg=0.15766612293996982
+2021-06-27 11:29:57.330 | INFO     | tigre.TIGRE:fit:196 - Epoch 12 train loss avg=0.15749233492439793
+2021-06-27 11:30:36.452 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 1700 (Epoch 13) epoch train loss avg=0.15773518027907069
+2021-06-27 11:30:55.320 | INFO     | tigre.TIGRE:fit:196 - Epoch 13 train loss avg=0.1567224337448997
+2021-06-27 11:31:24.932 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 1800 (Epoch 14) epoch train loss avg=0.15847888914868236
+2021-06-27 11:31:53.170 | INFO     | tigre.TIGRE:fit:196 - Epoch 14 train loss avg=0.1574648807366048
+2021-06-27 11:32:13.461 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 1900 (Epoch 15) epoch train loss avg=0.156904386729002
+2021-06-27 11:32:49.858 | INFO     | tigre.TIGRE:fit:196 - Epoch 15 train loss avg=0.1563997831075422
+2021-06-27 11:33:01.279 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 2000 (Epoch 16) epoch train loss avg=0.1568188676610589
+2021-06-27 11:33:44.597 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 2100 (Epoch 16) epoch train loss avg=0.156485169997503
+2021-06-27 11:33:52.929 | INFO     | tigre.TIGRE:fit:196 - Epoch 16 train loss avg=0.15648779561442713
+2021-06-27 11:34:33.393 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 2200 (Epoch 17) epoch train loss avg=0.15685136859183726
+2021-06-27 11:34:51.008 | INFO     | tigre.TIGRE:fit:196 - Epoch 17 train loss avg=0.15655639238895908
+2021-06-27 11:35:21.829 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 2300 (Epoch 18) epoch train loss avg=0.15559050199740074
+2021-06-27 11:35:48.512 | INFO     | tigre.TIGRE:fit:196 - Epoch 18 train loss avg=0.15680300240074435
+2021-06-27 11:36:10.409 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 2400 (Epoch 19) epoch train loss avg=0.15659474242817273
+2021-06-27 11:36:45.585 | INFO     | tigre.TIGRE:fit:196 - Epoch 19 train loss avg=0.15696892851302702
+2021-06-27 11:36:58.272 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 2500 (Epoch 20) epoch train loss avg=0.15803848430514336
+2021-06-27 11:37:41.285 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 2600 (Epoch 20) epoch train loss avg=0.15743037201464177
+2021-06-27 11:37:47.983 | INFO     | tigre.TIGRE:fit:196 - Epoch 20 train loss avg=0.15729937377956607
+2021-06-27 11:38:29.093 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 2700 (Epoch 21) epoch train loss avg=0.157388042503347
+2021-06-27 11:38:45.659 | INFO     | tigre.TIGRE:fit:196 - Epoch 21 train loss avg=0.15709394769322488
+2021-06-27 11:39:18.508 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 2800 (Epoch 22) epoch train loss avg=0.15928995547195277
+2021-06-27 11:39:43.503 | INFO     | tigre.TIGRE:fit:196 - Epoch 22 train loss avg=0.15930647631326028
+2021-06-27 11:40:06.953 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 2900 (Epoch 23) epoch train loss avg=0.158071666645507
+2021-06-27 11:40:41.008 | INFO     | tigre.TIGRE:fit:196 - Epoch 23 train loss avg=0.1575269934631163
+2021-06-27 11:40:55.666 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 3000 (Epoch 24) epoch train loss avg=0.1544207458694776
+2021-06-27 11:41:38.811 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 3100 (Epoch 24) epoch train loss avg=0.157222282862471
+2021-06-27 11:41:44.068 | INFO     | tigre.TIGRE:fit:196 - Epoch 24 train loss avg=0.157222282862471
+2021-06-27 11:42:27.407 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 3200 (Epoch 25) epoch train loss avg=0.1568884190917015
+2021-06-27 11:42:41.458 | INFO     | tigre.TIGRE:fit:196 - Epoch 25 train loss avg=0.1568718941942338
+2021-06-27 11:43:15.330 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 3300 (Epoch 26) epoch train loss avg=0.156337760780987
+2021-06-27 11:43:38.688 | INFO     | tigre.TIGRE:fit:196 - Epoch 26 train loss avg=0.15670177220336853
+2021-06-27 11:44:04.044 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 3400 (Epoch 27) epoch train loss avg=0.158885430258054
+2021-06-27 11:44:36.422 | INFO     | tigre.TIGRE:fit:196 - Epoch 27 train loss avg=0.1569687571496733
+2021-06-27 11:44:52.168 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 3500 (Epoch 28) epoch train loss avg=0.15614713249461992
+2021-06-27 11:45:33.758 | INFO     | tigre.TIGRE:fit:196 - Epoch 28 train loss avg=0.15648448082708544
+2021-06-27 11:45:40.557 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 3600 (Epoch 29) epoch train loss avg=0.1480514295399189
+2021-06-27 11:46:23.632 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 3700 (Epoch 29) epoch train loss avg=0.15619722925699675
+2021-06-27 11:46:36.740 | INFO     | tigre.TIGRE:fit:196 - Epoch 29 train loss avg=0.15641057347097703
+2021-06-27 11:47:12.254 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 3800 (Epoch 30) epoch train loss avg=0.15630004908889533
+2021-06-27 11:47:34.796 | INFO     | tigre.TIGRE:fit:196 - Epoch 30 train loss avg=0.15637938185564934
+2021-06-27 11:48:01.131 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 3900 (Epoch 31) epoch train loss avg=0.15653951492692744
+2021-06-27 11:48:31.966 | INFO     | tigre.TIGRE:fit:196 - Epoch 31 train loss avg=0.15654580463324824
+2021-06-27 11:48:49.184 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 4000 (Epoch 32) epoch train loss avg=0.15705234883353114
+2021-06-27 11:48:54.300 | INFO     | tigre.TIGRE:save:261 - Save model to checkpoints/two_save/
+2021-06-27 11:49:30.849 | INFO     | tigre.TIGRE:fit:196 - Epoch 32 train loss avg=0.15711620101524937
+2021-06-27 11:49:39.148 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 4100 (Epoch 33) epoch train loss avg=0.15612954273819923
+2021-06-27 11:50:21.938 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 4200 (Epoch 33) epoch train loss avg=0.15743350623934357
+2021-06-27 11:50:33.284 | INFO     | tigre.TIGRE:fit:196 - Epoch 33 train loss avg=0.15696046753756462
+2021-06-27 11:51:10.507 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 4300 (Epoch 34) epoch train loss avg=0.15671305979291597
+2021-06-27 11:51:30.706 | INFO     | tigre.TIGRE:fit:196 - Epoch 34 train loss avg=0.15660215157174295
+2021-06-27 11:51:58.352 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 4400 (Epoch 35) epoch train loss avg=0.1585484211643537
+2021-06-27 11:52:28.855 | INFO     | tigre.TIGRE:fit:196 - Epoch 35 train loss avg=0.1584251581901504
+2021-06-27 11:52:47.555 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 4500 (Epoch 36) epoch train loss avg=0.15957835937539736
+2021-06-27 11:53:26.471 | INFO     | tigre.TIGRE:fit:196 - Epoch 36 train loss avg=0.15806349895654187
+2021-06-27 11:53:36.247 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 4600 (Epoch 37) epoch train loss avg=0.15776114041606584
+2021-06-27 11:54:19.227 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 4700 (Epoch 37) epoch train loss avg=0.1572257224470377
+2021-06-27 11:54:28.751 | INFO     | tigre.TIGRE:fit:196 - Epoch 37 train loss avg=0.1570009943698683
+2021-06-27 11:55:06.960 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 4800 (Epoch 38) epoch train loss avg=0.15631225434216586
+2021-06-27 11:55:25.719 | INFO     | tigre.TIGRE:fit:196 - Epoch 38 train loss avg=0.15642063548007318
+2021-06-27 11:55:30.940 | INFO     | tigre.TIGRE:save:261 - Save model to checkpoints/two_save/
+2021-06-27 11:55:56.384 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 4900 (Epoch 39) epoch train loss avg=0.15621247538365424
+2021-06-27 11:56:24.451 | INFO     | tigre.TIGRE:fit:196 - Epoch 39 train loss avg=0.15626443525956524
+2021-06-27 11:56:44.731 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 5000 (Epoch 40) epoch train loss avg=0.15933237671852113
+2021-06-27 11:57:21.494 | INFO     | tigre.TIGRE:fit:196 - Epoch 40 train loss avg=0.1565037748265651
+2021-06-27 11:57:32.633 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 5100 (Epoch 41) epoch train loss avg=0.15892266109585762
+2021-06-27 11:58:15.637 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 5200 (Epoch 41) epoch train loss avg=0.15673665381197271
+2021-06-27 11:58:23.733 | INFO     | tigre.TIGRE:fit:196 - Epoch 41 train loss avg=0.15656327768679587
+2021-06-27 11:59:03.785 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 5300 (Epoch 42) epoch train loss avg=0.15617751929423082
+2021-06-27 11:59:21.244 | INFO     | tigre.TIGRE:fit:196 - Epoch 42 train loss avg=0.15681397638493969
+2021-06-27 11:59:52.535 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 5400 (Epoch 43) epoch train loss avg=0.1562685254303848
+2021-06-27 12:00:18.887 | INFO     | tigre.TIGRE:fit:196 - Epoch 43 train loss avg=0.15775236895968836
+2021-06-27 12:00:40.606 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 5500 (Epoch 44) epoch train loss avg=0.15754937041889538
+2021-06-27 12:01:16.183 | INFO     | tigre.TIGRE:fit:196 - Epoch 44 train loss avg=0.15735677966187078
+2021-06-27 12:01:29.393 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 5600 (Epoch 45) epoch train loss avg=0.157025096565485
+2021-06-27 12:02:11.965 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 5700 (Epoch 45) epoch train loss avg=0.15722865710655848
+2021-06-27 12:02:18.647 | INFO     | tigre.TIGRE:fit:196 - Epoch 45 train loss avg=0.15720045734797755
+2021-06-27 12:02:59.769 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 5800 (Epoch 46) epoch train loss avg=0.15649968773747483
+2021-06-27 12:03:15.500 | INFO     | tigre.TIGRE:fit:196 - Epoch 46 train loss avg=0.1565621514474192
+2021-06-27 12:03:47.581 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 5900 (Epoch 47) epoch train loss avg=0.1558726347155041
+2021-06-27 12:04:12.565 | INFO     | tigre.TIGRE:fit:196 - Epoch 47 train loss avg=0.15637164274531026
+2021-06-27 12:04:36.368 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 6000 (Epoch 48) epoch train loss avg=0.1561682370180885
+2021-06-27 12:05:10.848 | INFO     | tigre.TIGRE:fit:196 - Epoch 48 train loss avg=0.15625914558768272
+2021-06-27 12:05:25.403 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 6100 (Epoch 49) epoch train loss avg=0.15767750702798367
+2021-06-27 12:06:09.594 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 6200 (Epoch 49) epoch train loss avg=0.1566418312009304
+2021-06-27 12:06:14.725 | INFO     | tigre.TIGRE:fit:196 - Epoch 49 train loss avg=0.1566418312009304
+2021-06-27 12:06:58.370 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 6300 (Epoch 50) epoch train loss avg=0.15643880710005761
+2021-06-27 12:07:12.736 | INFO     | tigre.TIGRE:fit:196 - Epoch 50 train loss avg=0.1564217887578472
+2021-06-27 12:07:47.527 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 6400 (Epoch 51) epoch train loss avg=0.15661640112337313
+2021-06-27 12:08:11.238 | INFO     | tigre.TIGRE:fit:196 - Epoch 51 train loss avg=0.15638213099971895
+2021-06-27 12:08:36.606 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 6500 (Epoch 52) epoch train loss avg=0.159125013420215
+2021-06-27 12:09:09.561 | INFO     | tigre.TIGRE:fit:196 - Epoch 52 train loss avg=0.15668111222405587
+2021-06-27 12:09:25.645 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 6600 (Epoch 53) epoch train loss avg=0.15536393331629889
+2021-06-27 12:10:08.311 | INFO     | tigre.TIGRE:fit:196 - Epoch 53 train loss avg=0.15658353353219648
+2021-06-27 12:10:15.093 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 6700 (Epoch 54) epoch train loss avg=0.1577438861131668
+2021-06-27 12:10:58.885 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 6800 (Epoch 54) epoch train loss avg=0.15646282096321767
+2021-06-27 12:11:12.160 | INFO     | tigre.TIGRE:fit:196 - Epoch 54 train loss avg=0.15643219890133028
+2021-06-27 12:11:48.737 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 6900 (Epoch 55) epoch train loss avg=0.15616089571267366
+2021-06-27 12:12:10.776 | INFO     | tigre.TIGRE:fit:196 - Epoch 55 train loss avg=0.15675144438301364
+2021-06-27 12:12:37.272 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 7000 (Epoch 56) epoch train loss avg=0.15697902201541833
+2021-06-27 12:13:08.760 | INFO     | tigre.TIGRE:fit:196 - Epoch 56 train loss avg=0.15657536324954802
+2021-06-27 12:13:26.289 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 7100 (Epoch 57) epoch train loss avg=0.15601030737161636
+2021-06-27 12:14:07.111 | INFO     | tigre.TIGRE:fit:196 - Epoch 57 train loss avg=0.1562605825883727
+2021-06-27 12:14:15.314 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 7200 (Epoch 58) epoch train loss avg=0.14995844289660454
+2021-06-27 12:14:59.089 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 7300 (Epoch 58) epoch train loss avg=0.15631307206220096
+2021-06-27 12:15:10.507 | INFO     | tigre.TIGRE:fit:196 - Epoch 58 train loss avg=0.15694434952832037
+2021-06-27 12:15:47.649 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 7400 (Epoch 59) epoch train loss avg=0.15716225228139333
+2021-06-27 12:16:08.068 | INFO     | tigre.TIGRE:fit:196 - Epoch 59 train loss avg=0.1570581664000788
+2021-06-27 12:16:36.351 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 7500 (Epoch 60) epoch train loss avg=0.15854457343618075
+2021-06-27 12:17:05.945 | INFO     | tigre.TIGRE:fit:196 - Epoch 60 train loss avg=0.15671989622135316
+2021-06-27 12:17:24.692 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 7600 (Epoch 61) epoch train loss avg=0.1570454045302338
+2021-06-27 12:18:03.155 | INFO     | tigre.TIGRE:fit:196 - Epoch 61 train loss avg=0.15649812860834983
+2021-06-27 12:18:12.908 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 7700 (Epoch 62) epoch train loss avg=0.15242920815944672
+2021-06-27 12:18:56.462 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 7800 (Epoch 62) epoch train loss avg=0.15629143174737692
+2021-06-27 12:19:06.661 | INFO     | tigre.TIGRE:fit:196 - Epoch 62 train loss avg=0.15623328185850574
+2021-06-27 12:19:45.594 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 7900 (Epoch 63) epoch train loss avg=0.156219069422646
+2021-06-27 12:20:04.314 | INFO     | tigre.TIGRE:fit:196 - Epoch 63 train loss avg=0.15625662645024638
+2021-06-27 12:20:34.155 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 8000 (Epoch 64) epoch train loss avg=0.155874831834808
+2021-06-27 12:21:02.577 | INFO     | tigre.TIGRE:fit:196 - Epoch 64 train loss avg=0.1565312513661
+2021-06-27 12:53:44.654 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 8100 (Epoch 65) epoch train loss avg=0.15586094595491887
+2021-06-27 12:54:21.985 | INFO     | tigre.TIGRE:fit:196 - Epoch 65 train loss avg=0.15665537094877613
+2021-06-27 12:54:33.372 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 8200 (Epoch 66) epoch train loss avg=0.1595441112294793
+2021-06-27 12:55:16.938 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 8300 (Epoch 66) epoch train loss avg=0.1564055975398113
+2021-06-27 12:55:25.038 | INFO     | tigre.TIGRE:fit:196 - Epoch 66 train loss avg=0.1563514040843133
+2021-06-27 12:56:04.878 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 8400 (Epoch 67) epoch train loss avg=0.15569192705594975
+2021-06-27 12:56:22.390 | INFO     | tigre.TIGRE:fit:196 - Epoch 67 train loss avg=0.15619165870931842
+2021-06-27 12:56:53.560 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 8500 (Epoch 68) epoch train loss avg=0.15738723010701292
+2021-06-27 12:57:20.117 | INFO     | tigre.TIGRE:fit:196 - Epoch 68 train loss avg=0.15654036558924184
+2021-06-27 13:53:52.621 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 8600 (Epoch 69) epoch train loss avg=0.1570680859414014
+2021-06-27 13:54:28.247 | INFO     | tigre.TIGRE:fit:196 - Epoch 69 train loss avg=0.15642906521116534
+2021-06-27 13:54:40.851 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 8700 (Epoch 70) epoch train loss avg=0.1566409133374691
+2021-06-27 13:55:24.756 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 8800 (Epoch 70) epoch train loss avg=0.15618524588644506
+2021-06-27 13:55:31.786 | INFO     | tigre.TIGRE:fit:196 - Epoch 70 train loss avg=0.15623813446971677
+2021-06-27 13:56:13.106 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 8900 (Epoch 71) epoch train loss avg=0.15623248601332307
+2021-06-27 13:56:18.284 | INFO     | tigre.TIGRE:save:261 - Save model to checkpoints/two_save/
+2021-06-27 13:56:30.106 | INFO     | tigre.TIGRE:fit:196 - Epoch 71 train loss avg=0.15624737102658517
+2021-06-27 13:57:02.527 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 9000 (Epoch 72) epoch train loss avg=0.15683939763241345
+2021-06-27 13:57:27.203 | INFO     | tigre.TIGRE:fit:196 - Epoch 72 train loss avg=0.15622064363091223
+2021-06-27 13:57:50.382 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 9100 (Epoch 73) epoch train loss avg=0.156886109461387
+2021-06-27 13:58:24.530 | INFO     | tigre.TIGRE:fit:196 - Epoch 73 train loss avg=0.1561159639348907
+2021-06-27 13:58:38.687 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 9200 (Epoch 74) epoch train loss avg=0.1566905820121368
+2021-06-27 13:59:21.495 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 9300 (Epoch 74) epoch train loss avg=0.1564202139214162
+2021-06-27 13:59:26.706 | INFO     | tigre.TIGRE:fit:196 - Epoch 74 train loss avg=0.1564202139214162
+2021-06-27 14:00:09.975 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 9400 (Epoch 75) epoch train loss avg=0.1576483453810215
+2021-06-27 14:00:24.236 | INFO     | tigre.TIGRE:fit:196 - Epoch 75 train loss avg=0.15745864496115716
+2021-06-27 14:00:58.314 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 9500 (Epoch 76) epoch train loss avg=0.15687691518350652
+2021-06-27 14:01:21.576 | INFO     | tigre.TIGRE:fit:196 - Epoch 76 train loss avg=0.1563628797809924
+2021-06-27 14:01:46.810 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 9600 (Epoch 77) epoch train loss avg=0.15495538568267456
+2021-06-27 14:02:19.231 | INFO     | tigre.TIGRE:fit:196 - Epoch 77 train loss avg=0.15632904993910943
+2021-06-27 14:02:35.131 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 9700 (Epoch 78) epoch train loss avg=0.15667149743863515
+2021-06-27 14:07:51.300 | INFO     | tigre.TIGRE:fit:196 - Epoch 78 train loss avg=0.15641741358464764
+2021-06-27 14:07:57.873 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 9800 (Epoch 79) epoch train loss avg=0.15562695637345314
+2021-06-27 14:08:40.870 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 9900 (Epoch 79) epoch train loss avg=0.15581926531516588
+2021-06-27 14:08:53.429 | INFO     | tigre.TIGRE:fit:196 - Epoch 79 train loss avg=0.15621710917161358
+2021-06-27 14:09:28.426 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 10000 (Epoch 80) epoch train loss avg=0.1564249677583575
+2021-06-27 14:09:50.485 | INFO     | tigre.TIGRE:fit:196 - Epoch 80 train loss avg=0.15635433456590098
+2021-06-27 14:10:16.839 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 10100 (Epoch 81) epoch train loss avg=0.1575903474752392
+2021-06-27 14:10:47.540 | INFO     | tigre.TIGRE:fit:196 - Epoch 81 train loss avg=0.15633979944452162
+2021-06-27 14:11:04.869 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 10200 (Epoch 82) epoch train loss avg=0.15683612087741494
+2021-06-27 14:11:44.656 | INFO     | tigre.TIGRE:fit:196 - Epoch 82 train loss avg=0.1563489462339109
+2021-06-27 14:11:53.274 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 10300 (Epoch 83) epoch train loss avg=0.15579106472432613
+2021-06-27 14:12:36.829 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 10400 (Epoch 83) epoch train loss avg=0.15751130492598922
+2021-06-27 14:12:48.321 | INFO     | tigre.TIGRE:fit:196 - Epoch 83 train loss avg=0.15734132451395835
+2021-06-27 14:13:25.600 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 10500 (Epoch 84) epoch train loss avg=0.15719478843467577
+2021-06-27 14:13:45.705 | INFO     | tigre.TIGRE:fit:196 - Epoch 84 train loss avg=0.15659210782858632
+2021-06-27 14:14:13.581 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 10600 (Epoch 85) epoch train loss avg=0.15640450914700826
+2021-06-27 14:14:42.925 | INFO     | tigre.TIGRE:fit:196 - Epoch 85 train loss avg=0.15647514008225932
+2021-06-27 14:15:01.756 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 10700 (Epoch 86) epoch train loss avg=0.15549427395065626
+2021-06-27 14:15:40.241 | INFO     | tigre.TIGRE:fit:196 - Epoch 86 train loss avg=0.15627538352724044
+2021-06-27 14:15:49.909 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 10800 (Epoch 87) epoch train loss avg=0.15796864529450735
+2021-06-27 14:16:32.995 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 10900 (Epoch 87) epoch train loss avg=0.15616922852184092
+2021-06-27 14:16:43.018 | INFO     | tigre.TIGRE:fit:196 - Epoch 87 train loss avg=0.15627278243341752
+2021-06-27 14:17:21.570 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 11000 (Epoch 88) epoch train loss avg=0.15597166425802492
+2021-06-27 14:17:40.388 | INFO     | tigre.TIGRE:fit:196 - Epoch 88 train loss avg=0.15664347116985627
+2021-06-27 14:18:09.923 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 11100 (Epoch 89) epoch train loss avg=0.15750584076158702
+2021-06-27 14:18:37.800 | INFO     | tigre.TIGRE:fit:196 - Epoch 89 train loss avg=0.15756068991557245
+2021-06-27 14:18:57.991 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 11200 (Epoch 90) epoch train loss avg=0.15585863776504993
+2021-06-27 14:19:35.420 | INFO     | tigre.TIGRE:fit:196 - Epoch 90 train loss avg=0.15665795714143785
+2021-06-27 14:19:46.664 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 11300 (Epoch 91) epoch train loss avg=0.15427355002611876
+2021-06-27 14:20:29.348 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 11400 (Epoch 91) epoch train loss avg=0.15626305842707897
+2021-06-27 14:20:37.928 | INFO     | tigre.TIGRE:fit:196 - Epoch 91 train loss avg=0.15633864688777155
+2021-06-27 14:21:17.874 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 11500 (Epoch 92) epoch train loss avg=0.1564380118380422
+2021-06-27 14:21:35.277 | INFO     | tigre.TIGRE:fit:196 - Epoch 92 train loss avg=0.15653928958119884
+2021-06-27 19:19:31.056 | INFO     | tigre.TIGRE:fit:187 - Evaluation Step: 11600 (Epoch 93) epoch train loss avg=0.15689364996026545

@@ -134,20 +134,21 @@ def evaluate():
 
 def train():
     hyperparams = {
-        "seq_embed_size": 64,
-        "k_hops": 3,
-        "hop_layers": 3,
-        "lstm_layers": 3,
-        "fn_layers": 3,
-        "h_size": 256,
+        "seq_embed_size": 16,
+        "k_hops": 2,
+        "hop_layers": 2,
+        "lstm_layers": 2,
+        "lstm_hidden_dim": 64,
+        "fn_layers": 2,
+        "h_size": 128,
         "double": False,
         "lr": 1e-4,
         "weight_decay": 1e-8,
-        "alpha": 0.8,
-        "window_size": 30,
+        "alpha": 0.6,
+        "window_size": 10,
         "epochs": 100,
         "batch_size": 8,
-        "gradient_accumulation": 4
+        "gradient_accumulation": 8
     }
     training_setup = {
         "ratios": [0.80, 0.10, 0.10],
@@ -215,7 +216,7 @@ def train():
     # 3. Define models
     input_data_shape, target_shape = train_reader.shape() # input_data_shape == (window_size, # of stocks, # of features per stock)
 
-    sequential_embedding_model = LSTMSequentialEmbedding(input_data_shape, options.seq_embed_size, options.lstm_layers)
+    sequential_embedding_model = LSTMSequentialEmbedding(input_data_shape, options.seq_embed_size, options.lstm_layers, options.lstm_hidden_dim)
     relational_embedding_model = FCRelationalEmbedding(sequential_embedding_model.output_shape(), relational_encoding, options.k_hops, options.hop_layers)
     prediction_model = FCPrediction(
         sequential_embedding_model.output_shape(), 
@@ -230,6 +231,7 @@ def train():
         device=options.device,
         target_transform=target_transform
     )
+    print(model)
 
     # Define loss functions
     ranking_loss = RankingMSELoss(alpha=options.alpha)

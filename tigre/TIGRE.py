@@ -46,17 +46,19 @@ class TIGRE_Wrapper(nn.Module):
         self.device = device
 
         input_shape = sequential_embedding_model.input_shape
-        self.norm = nn.BatchNorm2d(input_shape[0])
+
         self.sequential_embedding_model = sequential_embedding_model.to(device)
         self.relational_embedding_model = relational_embedding_model.to(device)
         self.prediction_model = prediction_model.to(device)
         
     def forward(self, input_data, show_full_outputs=None):
         input_data.to(self.device)
-        input_data = self.norm(input_data)
         seq_embeddings = self.sequential_embedding_model(input_data)
+        # print("input", input_data.squeeze(dim=-1)[0][0][:10])
+        # print("seq_embeddings", seq_embeddings[0][0][:10])
+        # print()
         relational_embeddings = self.relational_embedding_model(seq_embeddings)
-       
+
         predictions = self.prediction_model(seq_embeddings=seq_embeddings, relational_embeddings=relational_embeddings)
         predictions = predictions.squeeze(dim=-1)
 
@@ -152,6 +154,7 @@ class TIGRE(nn.Module):
             os.mkdir(output_path)
 
         training_steps = 0
+
         self.model.train()
         for epoch in trange(epochs, desc="Epoch", disable=not show_progress_bar):
 
@@ -165,20 +168,18 @@ class TIGRE(nn.Module):
                     transform = self.target_transform["forward"]
                     targets = transform(targets)
                 
-                predicted_scores = self.model.forward(inputs)
+                predicted_scores = self.model(inputs)
                 loss = train_metric(predicted_scores, targets) / gradient_accumulation
                 
-                # print(targets[0][:10])
-                # print(predicted_scores[0][:10])
-                # print(loss)
-                # print()
-  
+                print("targets", targets[0][:10])
+                print("predicted_scores", predicted_scores[0][:10])
+             
               
                 loss.backward()
                 epoch_train_loss.append(loss.item() * gradient_accumulation) 
             
                 if (training_steps - 1) % gradient_accumulation == 0 or training_steps == len(train_loader):
-                    torch.nn.utils.clip_grad_value_(self.model.parameters(), 1.)
+                    # torch.nn.utils.clip_grad_value_(self.model.parameters(), 1.)
                     optimizer.step()
                     optimizer.zero_grad()
                 
@@ -274,7 +275,7 @@ class TIGRE(nn.Module):
                         logger.info(f"Pickling large data found in {model_path} config: {one_data_name}...")
                         pickle.dump(one_large_data, open(os.path.join(model_path, one_data_name + ".pkl"), "wb"))
                     del module_parameters[one_data_name]
-
+            print("model_path", module_parameters)
             json.dump(module_parameters, open(os.path.join(model_path, "config.json"), "w"))
             contained_modules.append({'idx': idx, 'name': name, 'path': os.path.basename(model_path), 'type': type(module).__module__})
 

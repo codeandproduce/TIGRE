@@ -49,18 +49,22 @@ class SequentialEmbedding(nn.Module, ABC):
 
         
 class LSTMSequentialEmbedding(SequentialEmbedding):
-    def __init__(self, input_shape: Tuple[int, int, int], embedding_size:int, lstm_layers: int):
+    def __init__(self, input_shape: Tuple[int, int, int], embedding_size:int, lstm_layers: int,  hidden_dim: int):
         """LSTM-based Sequental Embedding model.
         """
         super().__init__(input_shape, embedding_size)
         self.lstm_layers = lstm_layers
+        self.hidden_dim = hidden_dim
 
-        self.lstm = torch.nn.LSTM(
-            self.n_features, 
-            self.embedding_size, 
+        self.lstm = torch.nn.RNN(
+            input_size=self.n_features, 
+            hidden_size=self.hidden_dim, 
             num_layers=lstm_layers, 
-            batch_first=True
+            batch_first=True,
+            bias=True
         )
+       
+        self.fc = nn.Linear(self.hidden_dim, embedding_size, bias=True)
 
     def forward(self, input_data):
         '''
@@ -96,8 +100,9 @@ class LSTMSequentialEmbedding(SequentialEmbedding):
         input_data = input_data.permute(0, 2, 1, 3) # (16, 30, 736, 1) => (16, 736, 30, 1)
         
         input_data = input_data.reshape([batch_size * self.N, self.window_size, self.n_features]) # => (16*736, 30, 1)
-        out, _ = self.lstm(input_data) # (16*736, 30, 1) => (16 * 736, 30, 64)
-        out = out[:, -1, :] # (batch_size * n_stocks, embeddings per stock)
+        out, (hn, cn)  = self.lstm(input_data) # (16*736, 30, 1) => (16 * 736, 30, 64)
+        out = self.fc(out[:, -1, :])
+        # out = out[:, -1, :] # (batch_size * n_stocks, embeddings per stock)
         out = out.reshape(batch_size, self.N, self.embedding_size) # => (batch_size, n_stocks, 64)
         return out # (batch_size, N, U)
 
@@ -109,6 +114,7 @@ class LSTMSequentialEmbedding(SequentialEmbedding):
             "output_shape": self.output_shape(),
             "input_shape": self.input_shape,
             "embedding_size": self.embedding_size,
-            "lstm_layers": self.lstm_layers
+            "lstm_layers": self.lstm_layers,
+            "hidden_dim": self.hidden_dim
         }
         pass
